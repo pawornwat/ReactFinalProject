@@ -8,11 +8,9 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SchoolIcon from "@material-ui/icons/School";
 import SmallTitle from "../Components/SmallTitle";
 
-
-
 export default function ResumePage() {
-  const briefcase = <BusinessCenterIcon />
-    const school = <SchoolIcon />
+  const briefcase = <BusinessCenterIcon />;
+  const school = <SchoolIcon />;
   return (
     <>
       <MainLayout>
@@ -21,67 +19,52 @@ export default function ResumePage() {
           <InnerLayout>
             <div className="mr-5">
               <div className="skills">
-                <ProgressBar title={"HTML5"} width={"70%"} text={"70%"} />
-                <ProgressBar title={"CSS3"} width={"90%"} text={"90%"} />
-                <ProgressBar title={"JAVASCRIPT"} width={"85%"} text={"85%"} />
-                <ProgressBar title={"JAVA"} width={"60%"} text={"60%"} />
-                <ProgressBar title={"PYTHON"} width={"95%"} text={"95%"} />
-                <ProgressBar title={"React JS"} width={"75%"} text={"75%"} />
-                <ProgressBar title={"UNITY"} width={"75%"} text={"75%"} />
+                <ProgressBar title={"HTML5"} width={"90%"} text={"90%"} />
+                <ProgressBar title={"CSS3"} width={"70%"} text={"70%"} />
+                <ProgressBar title={"JAVASCRIPT"} width={"90%"} text={"90%"} />
+                <ProgressBar title={"JAVA"} width={"90%"} text={"90%"} />
+                <ProgressBar title={"PYTHON"} width={"80%"} text={"80%"} />
+                <ProgressBar title={"C#"} width={"80%"} text={"80%"} />
+                <ProgressBar title={"React JS"} width={"60%"} text={"60%"} />
               </div>
             </div>
           </InnerLayout>
         </SkillsStyled>
         <ResumeStyled>
-            <Title title={"Resume"} span={"Resume"} />
-            <InnerLayout>
-                <div className="small-title">
-                    <SmallTitle icon={briefcase} title={"brief"} />
-                </div>
-                <div className="resume-content">
-                    <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-
-                    />
-                    <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-
-                    />
-
-                </div>
-                <div className="small-title u-small-title-margin">
-                    <SmallTitle icon={school} title={"school"} />
-                </div>
-                <div className="resume-content ">
-                    <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-
-                    />
-                    <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-
-                    />
-                    {/* <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-                    /> */}
-                </div>
-            </InnerLayout>
-        </ResumeStyled>    
+          <Title title={"Resume"} span={"Resume"} />
+          <InnerLayout>
+            <div className="small-title u-small-title-margin">
+              <SmallTitle icon={school} title={"Education"} />
+            </div>
+            <div className="resume-content ">
+              <ResumeItem
+                year={"2015 - 2017"}
+                title={"High School Graduation"}
+                subTitle={"Benchamarachuthit Chanthaburi School"}
+                text={
+                  "Graduated in Science - Mathematics - International Music"
+                }
+              />
+              <ResumeItem
+                year={"2018 - 2022"}
+                title={"University"}
+                subTitle={"Thai-Nichi Intitute of Technology"}
+                text={"Faculty of Information Technology"}
+              />
+            </div>
+            <div className="small-title">
+              <SmallTitle icon={briefcase} title={"Work Experience"} />
+            </div>
+            <div className="resume-content">
+              <ResumeItem
+                year={"2021"}
+                title={"Avalant Co., LTD Thailand"}
+                subTitle={"Position Java Developer"}
+                text={"Coding Java and Develop Website"}
+              />
+            </div>
+          </InnerLayout>
+        </ResumeStyled>
       </MainLayout>
     </>
   );
@@ -98,14 +81,14 @@ const SkillsStyled = styled.section`
   }
 `;
 const ResumeStyled = styled.section`
-    .small-title{
-        padding-bottom: 3rem;
-    }
-    .u-small-title-margin{
-        margin-top: 4rem;
-    }
+  .small-title {
+    padding-bottom: 3rem;
+  }
+  .u-small-title-margin {
+    margin-top: 4rem;
+  }
 
-    .resume-content{
-        border-left: 2px solid var(--border-color);
-    }
+  .resume-content {
+    border-left: 2px solid var(--border-color);
+  }
 `;
