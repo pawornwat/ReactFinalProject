@@ -1,43 +1,21 @@
 import React from "react";
-import { Card, Container, Jumbotron } from "react-bootstrap";
-import Title from "../Components/Title";
-import { MainLayout, InnerLayout } from "../styles/Layout";
-import PhoneIcon from "@material-ui/icons/Phone";
-import EmailIcon from "@material-ui/icons/Email";
 import styled from "styled-components";
-
-export default function ContactPage() {
+export default function BoxContact({ icon, title, text }) {
   return (
-    <ContactStyled>
-      <MainLayout>
-        <InnerLayout>
-          <Title title={"Contact"} span={"Contact"} />
-        </InnerLayout>
-      </MainLayout>
+    <boxContactStyled>
       <div className="typography">
         <div className="icons">
-          <div className="icon i-facebook">
-            <PhoneIcon />
-          </div>
+          <div className="icon">{icon}</div>
         </div>
         <h1>
-          <span>Phone</span>
+          <span>{title}</span>
         </h1>
-        <p>099-1479924</p>
-        <div className="icons">
-          <div className="icon i-facebook">
-            <EmailIcon />
-          </div>
-        </div>
-        <h1>
-          <span>Email</span>
-        </h1>
-        <p>fightpawornwat@gmail.com</p>
+        <p>{text}</p>
       </div>
-    </ContactStyled>
+    </boxContactStyled>
   );
 }
-const ContactStyled = styled.header`
+const boxContactStyled = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
