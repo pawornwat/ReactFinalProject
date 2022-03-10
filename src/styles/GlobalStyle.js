@@ -65,6 +65,7 @@ const GlobalStyled = createGlobalStyle`
     }
     span{
         color: var(--primary-color);
+        font-size: 3rem;
     }
     .light-dark-mode{
         position: fixed;

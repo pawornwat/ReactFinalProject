@@ -33,7 +33,7 @@ export default function Navigation() {
         </li>
       </ul>
       <footer className="footer">
-        <p>@2022 React Port.</p>
+        <p>@2022 Pawornwat.</p>
       </footer>
     </NavigationStyled>
   );

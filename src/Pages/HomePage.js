@@ -12,11 +12,11 @@ export default function HomePage() {
           Hi I'm <span>Pawornwat Tangwattapornchai</span>
         </h1>
         <p>lorem</p>
-      </div>
-      <div className="icon">
+      <div className="icons">
           <div className="icon i-facebook"><FacebookIcon/></div>
           <div className="icon i-github"><GitHubIcon/></div>
           <div className="icon i-youtube"><YouTubeIcon/></div>
+      </div>
       </div>
     </HomePageStyled>
   );

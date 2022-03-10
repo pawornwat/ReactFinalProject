@@ -73,7 +73,7 @@ export default function App() {
             {/* <Route path="/portfolio" exact>
               <PortfolioPage />
             </Route> */}
-            <Route path="/contect" exact>
+            <Route path="/contact" exact>
               <ContactPage />
             </Route>
             <Route path="/product" exact>
